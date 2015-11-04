@@ -27,7 +27,7 @@ global scripts =  "$projects/Moffitt/Scripts/"  // dofiles
 // ready data
 global data    =  "$klmmexico/MoffittData/"     // data 
 // output
-global output  =  "$projects/Moffitt/Output/"   // output 
+global output  =  "$labor/labor_project"   // output 
 
 
 // simulate some data
@@ -60,5 +60,5 @@ twoway (histogram y1, discrete fraction color(gs10)  barwidth(.75))
 	   graphregion(color(white)) plotregion(fcolor(white));
 #delimit cr
 
-cd $output
+*cd $output
 graph export histogram.eps, replace
